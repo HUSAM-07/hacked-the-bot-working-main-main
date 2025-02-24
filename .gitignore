@@ -1,6 +1,5 @@
-env
+
 .env
-context.txt
 .vercel
 
 # Local Netlify folder
