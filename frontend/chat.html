@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Course Handout Assistant</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+</head>
+<body>
+    <div class="chat-page">
+        <nav class="top-nav">
+            <a href="index.html" class="nav-brand">Course Assistant</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <button id="process-docs" class="nav-button">
+                    <span class="button-text">Process Documents</span>
+                    <div class="loading-spinner"></div>
+                </button>
+            </div>
+        </nav>
+
+        <main class="chat-container">
+            <div class="chat-messages" id="chat-messages">
+                <div class="message system">
+                    <div class="message-content">
+                        <p>Hello! I'm your course handout assistant. I can help you find information from your course materials.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="typing-indicator hidden" id="typing-indicator">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+            <div class="chat-input-container">
+                <div class="input-wrapper">
+                    <textarea 
+                        id="user-input" 
+                        placeholder="Ask a question about your course materials..."
+                        rows="1"
+                        autofocus
+                    ></textarea>
+                    <button id="send-button" class="send-button">
+                        <svg viewBox="0 0 24 24" class="send-icon">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="input-help-text">Press Enter to send, Shift + Enter for new line</div>
+            </div>
+        </main>
+    </div>
+    <script src="static/js/marked.min.js"></script>
+    <script src="static/js/chat.js"></script>
+</body>
+</html> 

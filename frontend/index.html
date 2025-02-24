@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Handout Assistant - Home</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+</head>
+<body>
+    <div class="landing-container">
+        <header class="landing-header">
+            <h1>Course Handout Assistant</h1>
+            <p>Your AI-powered study companion for course materials</p>
+        </header>
+
+        <main class="landing-content">
+            <section class="handouts-section">
+                <div class="section-header">
+                    <h2>Available Course Handouts</h2>
+                    <button id="process-docs" class="primary-button">
+                        <span class="button-text">Process Documents</span>
+                        <div class="loading-spinner"></div>
+                    </button>
+                </div>
+                
+                <div class="handouts-grid" id="handouts-grid">
+                    <div class="loading-message">Loading available handouts...</div>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <a href="chat.html" class="cta-button">
+                    Start Chatting
+                    <svg viewBox="0 0 24 24" class="arrow-icon">
+                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                    </svg>
+                </a>
+            </section>
+        </main>
+
+        <footer class="landing-footer">
+            <p>Make sure to process your documents before starting the chat.</p>
+        </footer>
+    </div>
+    <script src="static/js/landing.js"></script>
+</body>
+</html> 
