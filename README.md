@@ -1,87 +1,130 @@
-# Course Handout Chatbot
+# What are we building?
 
-A chatbot that allows students to interact with their course handouts using natural language. Built with FastAPI, LangChain, and OpenAI.
+We will build a system with two primary features:
 
-# RUN ONLY WITH PYTHON 3.10 OR BELOW
-## Features
+### 1. Chatbot for RAG-based Querying
+- **Purpose:** Allow users to ask questions about course content using a Retrieval-Augmented Generation (RAG) system that comprises all course handouts.
+- **Example Query:** "Which course teaches the concepts of building RAG?"
+- **Functionality:** The chatbot will search through all course handouts and return the relevant results based on the user's query.
 
-- Process PDF and DOCX course handouts
-- Natural language interaction with course materials
-- Modern and responsive UI
-- Source attribution for answers
+# Project Architecture
+```mermaid
+flowchart LR
+    Start([Start]) --> Frontend[Access Frontend]
+    Frontend --> Question{Ask Question?}
+    
+    Question -->|Yes| SendRequest[Send API Request]
+    SendRequest --> BackendProcess[Backend Processing]
+    
+    BackendProcess --> LoadContext[Load Context]
+    LoadContext --> CreatePrompt[Create AI Prompt]
+    CreatePrompt --> CallOpenAI[Call OpenAI API]
+    
+    CallOpenAI --> ValidResponse{Valid Response?}
+    
+    ValidResponse -->|Yes| ProcessResponse[Process Response]
+    ValidResponse -->|No| ErrorHandler[Handle Error]
+    
+    ProcessResponse --> DisplayAnswer[Display Answer]
+    ErrorHandler --> DisplayError[Display Error Message]
+    
+    DisplayAnswer --> Question
+    DisplayError --> Question
+    
+    Question -->|No| End([End])
+```
+## Tech Stack
 
-## Prerequisites
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
 
+### Backend
 - Python 3.8+
-- Node.js (for serving the frontend)
+- FastAPI
+- LangChain
+- OpenAI GPT-4
+
+## Getting Started
+
+### Prerequisites
+- Python 3.8 or higher
+- Node.js and npm (for development)
 - OpenAI API key
+- Tavily API key
 
-## Setup
+### Installation
 
-1. Clone the repository
-2. Install Python dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/educareer-ai.git
+cd educareer-ai
+```
 
-3. Set up your environment variables:
-   - Copy `.env.example` to `.env`
-   - Add your OpenAI API key to the `.env` file:
-     ```
-     OPENAI_API_KEY=your_api_key_here
-     ```
+2. Set up the backend:
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
 
-## Docker Setup for ChromaDB
+3. Configure environment variables:
+```bash
+cp .env.example .env
+# Edit .env with your API keys and configuration
+```
 
-1. Start ChromaDB using Docker:
-   ```bash
-   docker-compose up -d chroma
-   ```
+4. Start the backend server:
+```bash
+uvicorn main:app --reload
+```
 
-2. Wait a few seconds for ChromaDB to initialize
-
-3. Start the backend server:
-   ```bash
-   cd backend
-   uvicorn main:app --reload --port 8080
-   ```
-
-Note: We're using port 8080 for the FastAPI backend since ChromaDB uses port 8000
-
-## Running the Application
-
-1. Start the backend server:
-   ```bash
-   cd backend
-   uvicorn main:app --reload
-   ```
-
-2. Serve the frontend:
-   You can use any static file server. For example, with Python:
-   ```bash
-   cd frontend
-   python -m http.server 3000
-   ```
-
-3. Open your browser and navigate to `http://localhost:3000`
+5. Open the frontend:
+```bash
+cd ../frontend
+# Simply open index.html in your browser
+```
 
 ## Usage
 
-1. Place your course handouts (PDF or DOCX) in the `course-handouts` directory
-2. Click the "Process Documents" button in the UI
-3. Once processing is complete, you can start asking questions about your course materials
-4. The chatbot will provide answers with references to the source materials
+1. Open the application in your web browser
+2. Select your preferred assistance mode
+3. Start chatting with the AI
+4. Use the various features like file upload, voice input, or screenshots as needed
 
-## Technical Details
+## Project Structure
 
-- Backend: FastAPI + LangChain + ChromaDB
-- Frontend: HTML + CSS + JavaScript
-- Document Processing: PyPDF + docx2txt
-- Embeddings: OpenAI Ada
-- LLM: OpenAI GPT
+```
+educareer-ai/
+├── frontend/
+│   ├── assets/
+│   │   ├── css/
+│   │   ├── js/
+│   │   └── images/
+│   ├── index.html
+│   └── chat.html
+├── backend/
+│   ├── main.py
+│   ├── requirements.txt
+│   └── .env
+└── README.md
+```
 
-## Notes
+## API Endpoints
 
-- The system uses ChromaDB for vector storage, which allows for efficient semantic search
-- All processed documents are stored locally in the `data` directory
-- The UI is responsive and works well on both desktop and mobile devices 
+- `POST /api/chat`: Main chat endpoint
+- `GET /health`: Health check endpoint
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
