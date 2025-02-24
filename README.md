@@ -9,7 +9,7 @@ We will build a system with two primary features:
 
 # Project Architecture
 ```mermaid
-flowchart LR
+flowchart TD
     Start([Start]) --> Frontend[Access Frontend]
     Frontend --> Question{Ask Question?}
     
