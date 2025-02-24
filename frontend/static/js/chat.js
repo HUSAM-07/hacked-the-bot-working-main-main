@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const typingIndicator = document.getElementById('typing-indicator');
 
     // Update this to your Vercel deployment URL
-    const API_URL = 'http://localhost:8000';
+    const API_URL = 'https://hacktbot-backend.vercel.app';
 
     // Auto-resize textarea
     function autoResizeTextarea() {
