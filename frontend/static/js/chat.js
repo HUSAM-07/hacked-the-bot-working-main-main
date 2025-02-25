@@ -37,15 +37,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const response = await fetch(`${API_URL}/chat`, {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
                 },
                 body: JSON.stringify({ question: message })
             });
 
             const data = await response.json();
-            
+            console.log('API Response:', data);
+
             if (!response.ok) {
-                throw new Error(data.detail || 'Failed to get response');
+                throw new Error(data.detail || `Server error: ${response.status}`);
             }
 
             if (!data.answer) {
@@ -54,15 +56,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
             addMessage(data.answer, 'bot');
         } catch (error) {
-            console.error('Error:', error);
+            console.error('Detailed Error:', {
+                message: error.message,
+                stack: error.stack,
+                response: error.response
+            });
+            
             let errorMessage = 'An error occurred. ';
             
-            if (error.message.includes('content not loaded')) {
+            if (error.message.includes('Failed to fetch')) {
+                errorMessage += 'Cannot connect to the server. Please check your internet connection.';
+            } else if (error.message.includes('content not loaded')) {
                 errorMessage += 'Please make sure to process the documents first.';
             } else if (error.message.includes('OPENAI_API_KEY')) {
                 errorMessage += 'There is an issue with the AI service configuration.';
             } else {
-                errorMessage += 'Please try again later.';
+                errorMessage += `Error details: ${error.message}`;
             }
             
             addMessage(errorMessage, 'error');
