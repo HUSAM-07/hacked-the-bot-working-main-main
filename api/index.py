@@ -95,11 +95,12 @@ async def chat(input_data: ChatInput):
         prompt = f"Context: {context}\n\nQuestion: {input_data.question}\n\nAnswer:"
 
         try:
-            # Call OpenAI
+            # Call OpenAI and extract the content from the response
             response = await llm.ainvoke(prompt)
+            answer = response.content if hasattr(response, 'content') else str(response)
             logger.info("Successfully received response from OpenAI")
             
-            return ChatResponse(answer=response)
+            return ChatResponse(answer=answer)
 
         except Exception as e:
             logger.error(f"OpenAI API error: {str(e)}")
