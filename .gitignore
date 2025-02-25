@@ -1,6 +1,11 @@
-
 .env
 .vercel
 
 # Local Netlify folder
 .netlify
+
+# Keep these
+.venv
+venv/
+__pycache__/
+*.pyc

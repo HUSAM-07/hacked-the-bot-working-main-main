@@ -7,8 +7,11 @@ import os
 from dotenv import load_dotenv
 import logging
 
-# Configure logging
-logging.basicConfig(level=logging.INFO)
+# Configure logging with more detail
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
 logger = logging.getLogger(__name__)
 
 # Load environment variables
@@ -24,7 +27,7 @@ app = FastAPI()
 # CORS configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://subtle-kataifi-c6d4a1.netlify.app", "http://localhost:3000"],
+    allow_origins=["https://subtle-kataifi-c6d4a1.netlify.app", "http://localhost:3000", "*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -32,7 +35,11 @@ app.add_middleware(
 
 # Initialize OpenAI client
 try:
-    llm = ChatOpenAI(temperature=0)
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        raise ValueError("OPENAI_API_KEY not found in environment variables")
+    llm = ChatOpenAI(api_key=api_key, temperature=0)
+    logger.info("OpenAI client initialized successfully")
 except Exception as e:
     logger.error(f"Failed to initialize OpenAI client: {str(e)}")
     raise
@@ -62,45 +69,43 @@ def load_context():
 class ChatInput(BaseModel):
     question: str
 
+class ChatResponse(BaseModel):
+    answer: str
+
 @app.get("/health")
 async def health_check():
     return {"status": "healthy"}
 
-@app.post("/chat")
-async def chat(chat_input: ChatInput):
+@app.post("/chat", response_model=ChatResponse)
+async def chat(input_data: ChatInput):
     try:
-        # Log incoming request
-        logger.info(f"Received chat request: {chat_input.question[:50]}...")
+        # Log the incoming request
+        logger.info(f"Received chat request with question: {input_data.question}")
 
-        # Load and validate context
+        # Load context
         context = load_context()
         if not context:
-            logger.error("No context available")
+            logger.error("Failed to load context")
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,
-                detail="No context available. Please process documents first."
+                detail="Course content not loaded. Please process documents first."
             )
 
         # Create prompt
-        prompt = f"""Context: {context}
+        prompt = f"Context: {context}\n\nQuestion: {input_data.question}\n\nAnswer:"
 
-Question: {chat_input.question}
-
-Please answer the question based on the context provided above. If the answer cannot be found in the context, say so."""
-
-        # Get response from OpenAI
         try:
-            response = llm.invoke(prompt)
+            # Call OpenAI
+            response = await llm.ainvoke(prompt)
+            logger.info("Successfully received response from OpenAI")
             
-            return JSONResponse(content={
-                "answer": response.content,
-                "sources": ["context.txt"]
-            })
+            return ChatResponse(answer=response)
+
         except Exception as e:
             logger.error(f"OpenAI API error: {str(e)}")
             raise HTTPException(
                 status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
-                detail="Error getting response from AI service"
+                detail=f"Error getting response from AI service: {str(e)}"
             )
 
     except HTTPException as he:
@@ -109,8 +114,23 @@ Please answer the question based on the context provided above. If the answer ca
         logger.error(f"Unexpected error in chat endpoint: {str(e)}")
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail="An unexpected error occurred"
+            detail=f"An unexpected error occurred: {str(e)}"
         )
+
+@app.get("/check-context")
+async def check_context():
+    try:
+        context = load_context()
+        return {
+            "status": "ok" if context else "error",
+            "message": "Context loaded successfully" if context else "Context not found",
+            "context_length": len(context) if context else 0
+        }
+    except Exception as e:
+        return {
+            "status": "error",
+            "message": f"Error checking context: {str(e)}"
+        }
 
 # Add this if you're running the file directly
 if __name__ == "__main__":

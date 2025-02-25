@@ -13,7 +13,6 @@
         }
     ],
     "files": [
-        "context.txt",
         "api/context.txt"
     ]
 } 
