@@ -1,3 +1,16 @@
+# Course Handout Assistant - BITS Pilani Dubai
+
+An AI-powered chatbot that helps students find information from their course handouts quickly and efficiently.
+
+## Currently Available Handouts
+- CS F415 - Data Mining (First Semester 2023-2024)
+
+## Features
+- **Instant Answers**: Get quick responses to questions about course content
+- **Context-Aware**: All answers are derived directly from official course handouts
+- **User-Friendly Interface**: Simple chat interface for asking questions
+- **Accurate Information**: Uses RAG (Retrieval-Augmented Generation) to ensure accuracy
+
 # What are we building?
 
 We will build a system with two primary features:
