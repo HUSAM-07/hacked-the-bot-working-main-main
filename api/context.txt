@@ -1,0 +1,2721 @@
+                               BITS PILANI, DUBAI CAMPUS
+                     ACADEMIC - UNDERGRADUATE STUDIES DIVISION
+                            FIRST SEMESTER 2023 – 2024
+                                           Course Handout (Part – II)
+                                                                                             Date: 28.08.2023
+In addition to Part I (General Handout for all courses appended to the Time Table) this portion further specific
+details regarding the course.
+Course No.                : CS F415 (3 0 3)
+Course Title              : Data Mining
+Instructor-in-charge      : Dr. J Angel Arul Jothi
+Instructor                : Dr. J Angel Arul Jothi
+Scope and Objective of the Course:
+The course explores the concepts and techniques of data mining, a promising and flourishing frontier in
+database systems. Data Mining is automated extraction of patterns representing knowledge implicitly stored
+in large databases, data warehouses, and other massive information repositories. It is a decision support
+tool that addresses unique decision support problems that cannot be solved by other data analysis tools
+such as Online Analytical Processing (OLAP). The course covers data mining tasks like constructing decision
+trees, finding association rules, classification, and clustering. The course is designed to provide students
+with a broad understanding in the design and use of data mining algorithms. The course also aims at
+providing a holistic view of data mining. It will have database, statistical, algorithmic and application
+perspectives of data mining. Students will also get to apply the DM concepts using Python.
+
+Course Pre/Co- requisite (if any) & Catalogue/Bulletin Description:
+Given in the Bulletin 2023–2024
+
+Text book(s):
+TB1. Tan P. N., Steinbach M & Kumar V. “Introduction to Data Mining” Pearson Education, 2ed, 2021.
+
+Reference book(s):
+RB1. Han J & Kamber M, “Data Mining: Concepts and Techniques”, Morgan Kaufmann Publishers, 2012
+RB2. Dunhum M.H. & Sridhar S. “Data Mining-Introductory and Advanced Topics”, Pearson Education,
+2006.
+
+Course Plan:
+
+  Lec. No      Learning objectives                              Contents                       Text/Reference
+                                                                                                    Book
+             To understand the             Introduction to Data Mining
+             definition and applications   ●        Motivation
+                                                                                                Class Notes
+             of Data Mining                ●        What is Data Mining?
+    1-2                                                                                          TB1: Ch1
+                                           ●        Data Mining Tasks
+                                                                                                 RB1: Ch1
+                                           ●        Issues in Data Mining
+                                           ●        Applications
+             To understand types of        Data Preprocessing
+             data and to improve the       ●        Types of data
+                                                                                                 TB1: Ch 2
+    3-6      quality of data and           ●        Data Quality
+                                                                                                 RB1: Ch 3
+             efficiency and the ease of    ●        Data preprocessing
+             the mining process.           ●        Similarity and Dissimilarity Measures
+             To study how to               Data Exploration
+     7       investigate the data          ●        Data Set & its Statistics                    TB1: Ch 3
+                                           ●        Visualization
+             To understand                 Classification
+             Classification and its        ●        Introduction
+             applications                  ●        Applications
+                                                                                                 TB1: Ch 4
+    8-12                                   ●        Decision Tree based Algorithms
+                                                                                                 RB1: Ch 7
+                                           ●        Model Overfitting
+                                           ●        Performance Evaluation of a Classifier
+                                           ●        Comparing Classifiers
+             To study the alternative      Classification: Alternative Techniques
+                                                                                                 TB1: Ch 5
+   13 – 19   approaches for                ●        Rule Based Classifier
+                                                                                                 RB1: Ch 7
+             Classification                ●        Nearest Neighbor Classifier
+                                            ●        Bayesian Classification
+                                             ●        Support Vector Machine
+                                             ●        Ensemble Classifiers
+                                             ●        Class Imbalance
+                                             ●        Multiclass Problem
+               To understand                 Association Rule Mining
+               applications of Association   ●        Introduction
+               Rule Mining and               ●        Applications
+                                                                                                        TB1: Ch 6
+   20 – 25     algorithms to find them       ●        Market-Basket Analysis
+                                                                                                        RB1: Ch 6
+                                             ●        Frequent Itemsets
+                                             ●        Apriori Algorithm
+                                             ●        Alternative Methods
+               To understand methods         Advanced Association Rule Mining
+               and need for finding          ●        Generalized Association Rules
+               complex Association           ●        Multilevel Association Rules
+                                                                                                        Class Notes
+   26 – 27     Rules                         ●        Multidimensional Association Rules
+                                                                                                         RB1: Ch 5
+                                             ●        Temporal Association Rules
+                                             ●        Infrequent Patterns
+                                             ●        Constrained Based Association Rules
+               To understand                 Clustering
+               applications and              ●        Introduction
+               algorithms for Clustering     ●        Applications                                      TB1: Ch 8
+   28 – 33                                   ●        Partitioning Algorithms                           RB1: Ch 8
+                                             ●        Hierarchical Algorithms
+                                             ●        Density based Algorithms
+                                             ●        Cluster Evaluation
+               To study advanced topics      Clustering: Additional Issues and Algorithms
+               in cluster analysis           ●        Characteristics of Data, Clusters and
+                                                                                                        TB1: Ch 9
+   34 – 36                                   clustering algorithms
+                                                                                                        RB1: Ch 8
+                                             ●        Graph Based Clustering
+                                             ●        Scalable Clustering Algorithms
+               To understand detection       Anomaly Detection
+               of anomalies & their          ●        Preliminaries
+               causes                        ●        Statistical Approaches
+   37 – 39                                                                                              TB1: Ch10
+                                             ●        Proximity based Outlier Detection
+                                             ●        Density based Outlier Detection
+                                             ●        Clustering Based Techniques
+               To introduce advanced         Advanced Topics
+               topics in Data Mining         ●        Artificial Neural Networks                         TB1: Ch 5
+   40 - 42
+                                             ●        CNN and its applications                          Class Notes
+
+* The lectures may be slightly diverging from aforesaid plan based on students’ background & interest in the topic, which
+may perhaps include special lectures and discussions that would be planned and schedule notified accordingly
+
+Course Learning Outcomes (CLOs)
+Upon successful completion of this course, students should be able to:
+   • CLO1 Differentiate different data mining tasks and explain various data mining algorithms
+   • CLO2 Perform the data preprocessing and understand the implications
+   • CLO3 Solve numerical problems using data mining techniques on a given dataset
+   • CLO4 Evaluate data mining algorithms using suitable performance metrics
+   • CLO5 Identify real world problems, apply state-of-the-art data mining algorithms, compare different
+       approaches, discuss the findings and prepare a report
+
+Evaluation scheme:
+
+  EC         Components          Nature of the         Duration        Weightage         Date & Time          Venue
+  No.                            Component                                 %
+   1             Project          Open book           Continuous         10%             On or before
+             Assignment 1**                                                              29.09.2023
+                                                                                                              To
+   2          Mid Sem Test        Closed Book           90 mins            30%          31.10.2023 FN
+                                                                                                             be
+   3             Project           Open book          Continuous           20%           On or before
+                                                                                                             annou
+             Assignment 2**                                                                30.11.23
+                                                                                                             nced
+   4         Compre Exam          Closed Book           3 hours            40%          05.01.2024 FN
+**Detailed instructions will be communicated to the students.
+**Student project demonstration and presentation will be conducted
+Mapping of CLOs, PLOs, and CECs
+
+                                                       Evaluation Components (ECs)
+          CLOs             PLOs
+                                              EC1            EC2         EC3                EC4
+          CLO1             1, 2, 4                             ✓                             ✓
+          CLO2             1, 3, 4                             ✓                             ✓
+          CLO3             1, 3, 4                             ✓                             ✓
+          CLO4             1, 3, 4                             ✓                             ✓
+          CLO5             1, 3, 4, 8           ✓                         ✓
+
+
+Mid-sem Grading:
+Mid-sem grading will be displayed after two evaluation components or earlier whenever about 40% of
+evaluation components are completed.
+Note: A student will be likely to get “NC”, if he / she doesn’t appear / appear for the sake of appearing
+for the evaluation components / scoring zero in pre-compre total.
+
+Makeup and Attendance policies:
+Make-ups are not given as a routine. It is solely dependent upon the genuineness of the circumstances
+under which a student fails to appear in a scheduled evaluation component. In such circumstances, prior
+permission should be obtained from the Instructor-in-Charge (I/C). Students with less than 50% of
+attendance will not be allowed to avail the make-ups. The decision of the I/C in the above matter will be
+final.
+
+Attendance: Every student is expected to be responsible for regularity of his/her attendance in class rooms
+and laboratories, to appear in scheduled tests and examinations and fulfill all other tasks assigned to him/her
+in every course. A student should have a minimum of 60% of attendance in a course to be eligible to appear
+for the Comprehensive Examination in that course. For the students under the purview of Academic
+Counseling Board (ACB), the Board shall prescribe the minimum attendance requirement on a case-to-case
+basis. Attendance in the course will be a deciding factor in judging the seriousness of a student which may
+be directly / indirectly related to grading.
+
+General timings for consultation:
+Chamber consultation hour: Friday 5th hour
+
+General instructions:
+Students should come prepared for classes and carry the text book(s) or material(s) as prescribed by the
+Course Faculty to the class.
+
+Notices:
+All notices concerning the course will be displayed on the CS department Notice Board and on LMS Moodle.
+Students are also informed to check their BITS email (regularly) for any communication regarding the course.
+
+                                                                     Dr. J. Angel Arul Jothi
+                                                                     Instructor-in-Charge
+
+
+
+  Instructor’s Contact Details:
+ Dr. J. Angel Arul Jothi, Room No: 231, Contact No: +9714-4200700 Ext.158,
+ e-mail: angeljothi@dubai.bits-pilani.ac.in
+
+
+BITS PILANI, DUBAI CAMPUS
+ACADEMIC-UNDERGRADUATE STUDIES DIVISION
+FIRST SEMESTER 2023-2024
+Course Handout (Part II)
+Date: 28.08.2023
+In addition to part-I (General Handout for all courses appended to the time table) this portion gives further
+specific details regarding the course.
+Course No.
+: BITS F464 (3 0 3)
+Course Title
+: Machine Learning
+Instructor-in-charge: Dr. Pranav M. Pawar
+Co-Instructor
+: Dr. Pranav M. Pawar
+Catalog Description and Objectives:
+Machine Learning is an exciting sub-area of Artificial Intelligence which deals with designing machines
+which can learn and improve their performance from examples/experience. This course introduces the
+student to the key algorithms and theory that forms the core of machine learning. The course will cover the
+major approaches to learning namely, supervised, unsupervised, semi-supervised, and reinforcement
+leaning. The course emphasizes various techniques, which have become feasible with increased
+computational power and our ability to produce and capture huge volumes of data. The topics covered in the
+course include regression, decision trees, support vector machines, artificial neural networks, Bayesian
+techniques, Hidden Markov models etc. Some advanced topics like active, deep & topological learning will
+also be covered.
+Course Pre/Requisite (if any) & Catalogue / Bulletin Description: Please refer Bulletin 2023-2024.
+Text Books [TB]
+TB1. Tom M. Mitchell, Machine Learning, The McGraw-Hill Companies, 1st edition 2013.
+Reference Books [RB]
+RB1. Christopher M. Bhisop, Pattern Recognition & Machine Learning, Springer, 2006.
+RB2. Marsland Stephen, Machine Learning – An Algorithmic Perspective, 2e, CRC Press, 2015.
+RB3. Alpaydin Ethem. Introduction to Machine Learning, 3e, PHI, 2014.
+RB4. Andrew Ng, Machine Learning Yearning, Draft Version.
+RB5. Ian Goodfellow, Yoshua Bengio, and Aaron Courville, Deep Learning, MIT Press, 2016.
+Prerequisites*
+1.
+2.
+3.
+4.
+5.
+
+Probability theory
+Decision theory
+Information theory
+Linear Algebra
+Optimization & Search
+
+* A good understanding of the above topics is essential
+
+Self Study
+
+Ch.2, Appendix C
+– R1
+
+Course Plan
+Topic
+
+Topic Details
+
+Overview
+
+Introduction to Machine Learning
+1. Motivation/course objectives
+2. Recipe of a machine learning algorithm
+Introduction to different types of Learning:
+1. Supervised, semi-supervised, and
+unsupervised learning
+2. Bayesian learning
+3. Instance-based learning
+4. Reinforcement learning
+5. Active learning
+6. Deep learning
+
+Types of Learning
+
+High-dimensional
+data & Curse of
+Dimensionality
+
+Characteristics of High-dimensional data,
+Curse of Dimensionality (CoD) problem
+
+Supervised Learning
+
+Regression
+1. Polynomial regression
+a. Model flexibility/selection
+b. Overfitting/underfitting
+c. Regularization
+2. Linear basis function models
+Hands on Demonstration of Regression and
+Multiple Linear Regression
+Classification
+1. Discriminant Functions (two class and
+multiclass)
+a. Least Square
+b. Fisher’s Linear Discriminant
+c. Perceptron Algorithm
+2. Probabilistic Generative Classifiers
+a. Bayes’ classifier
+3. Probabilistic Discriminative Classifiers
+a. Logistic Regression
+4. Decision Tree Learning
+5. Artificial Neural Networks
+a. McCulloch & Pitts Model
+b. Perceptrons
+c. Multilayer Perceptrons (MLP)
+d. Network training
+e. Error back-propagation
+Mathematical Model Derivation
+Hands on Demonstration of MLP
+6. Ensemble Learning
+a. Boosting
+b. Bagging
+c. Random Forests
+7. Support Vector Machines (SVM)
+
+Supervised Learning
+
+Lecture #
+
+Chapter
+Reference
+1 Ch. 1 - TB
+Ch.1 – R1,R2,R3
+Ch. 5 – R5
+2 Ch.1 – R2, R3
+
+3 Ch.1 – R1
+
+5-6 Ch. 3 – R1
+
+7-9 1.
+
+2.
+3.
+4.
+10
+11-12 5.
+13-15
+16-18
+6.
+7.
+
+19-20
+
+Ch. 4 – R1
+
+Ch. 10 – R3
+Ch. 4 – R1
+Ch. 4 – R1
+Ch. 3 - TB
+Ch. 12 – R2
+Ch. 9 – R3
+Ch. 4 – TB
+Ch. 5 – R1
+Chs. 3,4 – R2
+Ch. 11 – R3
+Ch. 13 –
+R2
+Ch. 17 – R3
+Ch. 8 – R2
+Ch. 13 – R3
+
+Kernel Methods
+
+1.
+2.
+3.
+
+Bayesian Learning
+
+1.
+2.
+3.
+4.
+5.
+
+Instance-based
+Learning
+
+a. Maximum margin hyperplanes
+b. Structural risk minimization
+c. VC dimension/Shattering
+d. Duality
+e. Kernels
+f. Regression
+Mathematical Model Derivation
+Hands on Demonstration of SVM and
+Bagging Boosting
+Kernels
+Kernel trick
+Kernel-based Machine Learning
+Algorithms
+Bayesian Probability
+Bayesian linear regression
+Bayes optimal classifier
+Gibbs Algorithm
+Naïve Bayes Learning Algorithm
+
+1. Rote classifiers
+2. Case-based Reasoning
+3. K-NN
+Hands on Demonstration of K-NN
+1. Bayesian Belief Networks (BBN)
+Probabilistic
+2. Markov Random Fields (MRF)
+Graphical Models
+3. Hidden Markov Models (HMM)
+(PGM)
+Application and Case Study
+Unsupervised Learning Clustering
+1. K-means Clustering
+2. Mixture of Gaussians
+3. Expectation Maximization
+(EM) Clustering
+4. Self-organized Maps (SOM)
+Dimensionality Reduction
+1. LDA
+2. PCA/SVD
+3. ICA
+4. Factor Analysis
+Hands on Demonstration of LDA, PCA
+1. Motivation
+Reinforcement
+2. Exploration vs. Exploitation tradeoff
+Learning
+3. Markov Decision Process (MDP)
+4. Action and state spaces
+5. Q Learning Algorithm
+6. Sarsa Algorithm
+Introduction to Deep Reinforcement
+Learning
+
+21-22
+
+23-24 Ch. 6 – R1
+Ch. 13 – R3
+25-26 Ch. 6 – TB
+Ch. 16 – R3
+
+27-28 Ch. 8 - TB
+Ch. 8 – R3
+29-31 Ch. 6 - TB
+Ch. 8 – R1
+Ch. 16 – R2
+Ch. 14,15 – R3
+32-33 Ch. 9 – R1
+Ch. 14 – R2
+Ch. 7 – R3
+
+34-35 Ch. 6 – R2, R3
+
+36-37 Ch. 13 – TB
+Ch. 11 – R2
+Ch. 18 – R3
+
+Active Learning
+
+1. Motivation
+2. Types of Active Learning
+a. Version space
+b. Membership query synthesis
+c. Pool-based sampling
+d. Stream-based sampling
+3. Query Strategy Frameworks
+a. Uncertainty sampling
+i. Least confident
+ii. Margin sampling
+iii. Entropy
+b. Query by committee (QBC)
+i. Vote entropy
+ii. KL divergence
+4. Analysis of Active Learning
+
+38-40 Class Notes
+
+Introduction to
+Advanced
+Learning
+Techniques
+
+1. Deep Learning (Introduction to RNN and
+CNN)
+2. Topological Learning
+Hands on Demonstration of CNN
+
+41-42 1. R5
+2. Class Notes
+
+Course Learning Outcomes (CLOs)
+
+Upon successful completion of this course, students should be able to:
+• CLO1 To study the basic theory of machine learning and how computers can learn from experience.
+• CLO2 To be able to formulate machine learning problems corresponding to different applications
+and understand the different applications of machine learning with their strength and weaknesses.
+• CLO3 To know the various supervised learning algorithm for regression and classifications and how
+to solve real world problems by using them.
+• CLO4 To understand the structure of unlabeled data and working of unsupervised learning to be
+applied to unlabeled data.
+• CLO5 To learn advanced machine learning techniques such as reinforcement learning, active
+learning and deep learning, and also understand applications of it.
+Evaluation Scheme [Legends: OB - Open Book, CB - Closed Book, TBA – To Be Announced]
+Component
+Mini Project – Part I
+(Problem definition,
+Literature survey) (OB)
+Mid-sem Test
+(CB)
+Mini Project – Part II
+(Design, Implementation,
+presentation and
+demonstration) (OB)
+Comprehensive Exam
+(CB)
+
+Duration
+
+Weightage
+
+Date (Time)
+
+Take
+home
+
+10 %
+
+On or Before
+15-10-23
+
+90 Mins.
+
+30 %
+
+03-11-23
+FN
+
+Take
+home
+
+20 %
+
+On or Before
+10-12-23
+
+3 Hours
+
+40 %
+
+09-01-24
+FN
+
+Venue
+
+TBA
+
+*Only prescribed text book(s) and hand-written notes are permitted
+Labs. on R/python: No structured lab sessions, but students will be provided with lab applications on
+
+important topics.
+Objective of Mini Project
+To understand application of ML algorithms in different areas like IoT, cloud computing, and other recent
+areas and write a detailed research article over a real time project.
+Mapping of CLOs, PLOs, and CECs
+CLOs
+
+PLOs
+
+CLO1
+CLO2
+CLO3
+CLO4
+CLO5
+
+1,2
+2,3,5,6,7,8
+2,3,4,5,8
+2,3,4,5,8
+2,3,5
+
+EC1
+✓
+✓
+✓
+
+Evaluation Components (ECs)
+EC2
+EC3
+EC4
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+
+* Please refer the link for the PLOs of the B.E. Computer Science programme
+
+Mid-Semester grading
+Mid-semester grading will be displayed after two evaluation components or earlier when-ever about 40%
+of evaluation components are completed.
+NOTE: A student will be likely to get “NC”, if he/she doesn’t appear / appear for the sake of appearing
+for the evaluation / scoring zero in comprehensive examination
+Make up and attendance policies
+Make-ups are not given as a routine. It is solely dependent upon the genuineness of the circumstances under
+which a student fails to appear in a scheduled evaluation component. In such circumstances, prior permission
+should be obtained from the Instructor-in-Charge (I/C). The decision of the course committee in the above
+matter will be final.
+Attendance: Every student is expected to be responsible for regularity of his/her attendance in class rooms,
+to appear in scheduled tests and examinations and fulfill all other tasks assigned to him/her in this course.
+A student should have a minimum of 60% of attendance in a course to be eligible to appear for the
+Comprehensive Examination in the course. For the students under the purview of Academic Counseling
+Board (ACB), the Board shall prescribe the minimum attendance requirement on a case-to-case basis.
+Attendance in the course will be a deciding factor in judging the seriousness of a student which may be
+directly / indirectly related to grading.
+
+General timings for consultation
+CCH for Regular class: Wednesday hour-9, 02:50 pm -03:40 pm
+Contact Details
+Dr. Pranav M. Pawar, Room no: 238, Contact No: +9714-2753700 Ext: 304, email: pranav@dubai.bitspilani.ac.in
+General Instructions
+Students should come prepared for classes and carry the materials that are prescribed by the Instructor.
+Notices
+
+All notices concerning the course will be displayed on the respective Notice Boards. Optionally, if there is a
+need, email to your BITS mail would be used on short notice and therefore you should activate your BITS
+mail. All official communications will be sent to your BITS email only.
+
+Instructor-in-charge
+BITS F464
+
+
+BITS PILANI, DUBAI CAMPUS
+ACADEMIC – UNDERGRADUATE STUDIES DIVISION
+SECOND SEMESTER 2023 - 2024
+Course Handout (Part II)
+Date: 5.2.2024
+In addition to part-I (General Handout for all courses appended to the timetable) this portion gives further
+specific details regarding the course.
+Course No
+Course Title
+Instructor-in-charge
+Instructors
+
+:
+:
+:
+:
+
+CS F407
+(3 0 3)
+Artificial Intelligence
+Dr. Sujala D. Shetty
+Dr. Sujala D. Shetty
+
+Scope and objective of the course:
+This course introduces students to basic concepts and methods of artificial intelligence from a computer
+science perspective. AI concerns itself with a certain set of problems and develops a particular body of
+techniques for approaching these problems. The focus of the course will be on the study of methods of
+knowledge representation, reasoning, and algorithms required for the development of intelligent
+programs. AI not only strives to build intelligent entities, but also allows understanding them. This course
+will empower the students to know how to program computers, using classical symbolic methods, to
+behave in ways normally attributed to "intelligence" when observed in humans. AI currently
+encompasses a huge variety of sub fields, like perception, logical reasoning, proving mathematical
+theorems, and diagnosing diseases etc. AI empowers the computer engineers to systematize and
+automate the intellectual tasks, with the help of a set of tools, and methodologies. The methods studied
+in this course can be applied in any area of human intellectual endeavor.
+The assignments / laboratory components will emphasize the use of C, C++,Java but predominantly
+Python or any other language of student’s interest. The students will be asked to implement the use of
+Search strategies in real world problem solving, Game playing programs like chess or tic-tac-toe,
+Planners, Small Expert system shell with only inference engine, Programs for reasoning under
+uncertainties using models like TMS or Bayes’ Networks, Natural Language understanding programs,
+and Programs in the area of Machine learning using connectionist models like neural networks or using
+symbolic models.
+Course Pre/Co- requisite (if any) & Catalogue / Bulletin Description: Given in the Bulletin 2023 – 2024
+
+Study Material:
+Text Books:
+T1. Stuart Russell and Peter Norvig, Artificial Intelligence A Modern Approach Prentice Hall, Third
+Edition 2015 (Indian reprint: Pearson Education).
+Reference books:
+(i) George F.Luger,, Artificial Intelligence, Pearson Education
+(ii) Elaine Rich and Kevin Knight, Artificial Intelligence, Tata McGraw Hill, Second Edition
+(iii) Tom M Mitchell, “Machine Learning”, McGraw-Hill
+Course plan:
+Lec. No. Learning
+objectives
+1
+2-4
+
+Introduction
+Problem Solving
+
+5-7
+
+Informed Search
+
+8
+
+Heuristic Functions
+
+Contents
+
+Introduction to AI, background, Overview of course
+Problem Solving Agents, Example Problems,
+Uninformed Search Strategies, Avoiding Repeated
+States in search
+Heuristic Search Strategies (Greedy Best First Search,
+A* Search, Memory Bounded Heuristic Search)
+Designing Heuristic Functions
+
+References
+@
+(Chapters)
+Class Notes
+Pg. 66-93
+
+Pg. 94-104
+Pg. 104-109
+
+9-10
+
+Planning and acting
+in the real world
+
+Local Search Algorithms (Hill-Climbing Search,
+Simulated Annealing Search, Local Beam Search)
+
+Pg. 123-132
+
+11-13
+
+Game Playing
+
+Game Playing, Minimax & Alpha-Beta Pruning
+Algorithm, Imperfect Real-time decisions, Constraint
+Satisfaction Problems
+
+Pg. 164-173
+
+14-16
+
+Student
+Presentations
+
+Student presentations on current research areas of
+search strategies from Journals of AI
+
+17-21
+
+Uncertainty
+
+Acting under uncertainty, Basic Probability Notation,
+Inference Using Full Joint Distribution, Independence,
+Bayes Rule and it’s Use, Bayesian Networks
+
+Pg. 488-539
+
+22-25
+
+Planning
+
+Pg. 373-394
+
+26-29
+
+Machine Learning
+
+30-36
+
+Introduction to
+Deep Learning with
+Introduction to
+Computer Vision,
+Natural Language
+Processing and
+most recent topics
+in AI like
+Conversational AI
+and Explainable AI
+
+Planning problem, Planning with state space search ,
+Partial order planning, planning graphs, planning with
+propositional logic
+Connectionist Models: Introduction to Neural Networks,
+Hopfield
+Networks,
+Perceptron
+Learning,
+Backpropagation & Competitive Learning, Applications of
+Neural Net: Speech, Vision, Traveling Salesman,
+Handwritten digit recognition.
+Introduction to CNN and RNN and concepts relevant to
+learning Vision and Language.
+
+37-40
+
+Generative AI
+
+41-42
+
+Student
+Presentations
+
+T3 Ch 2 +
+Class Notes
+
+Class Notes
+
+Explore common generative AI models and tools for text,
+code, image, audio, and video generation, LLM, Prompt
+engineering
+Current Research on Machine learning from
+Transactions on Neural networks, Pattern Recognition,
+etc. Students pick up a topic and work on the
+implementation of the same in groups
+
+The lectures may slightly diverge from aforesaid plan based on students ‘background & interest in the topic, which
+may perhaps include special lectures and discussions that would be planned and schedule notified accordingly.
+Most topics will be accompanied with corresponding lab sessions.
+
+Course Learning Outcomes (CLOs)
+Upon successful completion of this course, students should be able to:
+ CLO1 Differentiate different search algorithms and understand their working
+ CLO2 Apply how AI techniques can be used in Game playing applications
+ CLO3 Solve numerical problems related to uncertainty in AI reasoning systems
+ CLO4 Evaluate different neural network architectures for different applications
+ CLO5 Identify real world problems, apply state-of-the-art AI algorithms, compare different
+approaches, discuss the findings and prepare a report
+
+Evaluation Scheme:
+EC No
+Components
+
+1
+
+Mid-Sem Test
+
+Nature of
+Component
+
+Duration
+
+Weightage%
+
+Date & Time
+
+Venue
+
+Open Book
+
+90 minutes
+
+30
+
+03.04.24 (FN)
+
+To be
+announced
+later
+
+2
+3
+4
+
+Take home
+Application
+Development1 +
+12
+19.04.24
+Presentation*
+Take home
+Application
+18
+17.05.24
+Development2 +
+Presentation*
+Compre Exam
+Closed Book
+3 hours
+40
+04.06.24 (AN)
+*Detailed information will be shared with the students about this component
+
+Mapping of CLOs, PLOs, and CECs
+CLOs
+
+PLOs
+
+CLO1
+CLO2
+CLO3
+CLO4
+CLO5
+
+1, 4
+1, 3, 4
+1, 3, 4
+1, 3, 4
+1, 3, 4, 8
+
+EC1
+✓
+✓
+
+Evaluation Components (ECs)
+EC2
+EC3
+
+✓
+
+EC4
+✓
+✓
+✓
+✓
+
+✓
+
+Mid-sem Grading:
+Mid-sem grading will be displayed after Mid-Sem Test-1 and application development1 and
+presentation (42% weightage) are completed.
+Note: A student will be likely to get “NC”, if he / she
+
+Doesn’t appear / appear for the sake of appearing for the evaluation components / scoring zero
+in pre-compre total.
+Makeup and Attendance policies:
+Make-ups are not given as a routine. It is solely dependent upon the genuineness of the circumstances
+under which a student fails to appear in a scheduled evaluation component. In such circumstances,
+prior permission should be obtained from the Instructor-in-Charge (I/C).The decision of the I/C in the
+above matter will be final.
+Attendance: Every student is expected to be responsible for regularity of his/her attendance in class
+rooms and laboratories, to appear in scheduled tests and examinations and fulfill all other tasks
+assigned to him/her in every course. A student should have a minimum of 60% of attendance in a course
+to be eligible to appear for the Comprehensive Examination in that course. For the students under the
+purview of Academic Counseling Board (ACB), the Board shall prescribe the minimum attendance
+requirement on a case-to-case basis. Attendance in the course will be a deciding factor in judging the
+seriousness of a student which may be directly / indirectly related to grading.
+General timings for consultation:
+The students can contact the instructor between 9:20AM and 10:10AM on Tuesday.
+General instructions:
+Students should come prepared for classes and carry the text book(s) or material(s) as prescribed by
+the Course Faculty to the class.
+Notices:
+All notices concerning the course will be displayed on the CS Notice Boards.
+Dr. Sujala D. Shetty
+Instructor-in-Charge CS F407
+
+Contact details
+Name Dr. Sujala D. Shetty, Associate Professor Chamber No: 279 Contact No: +9714 400700
+Ext.328, email: sujala@dubai.bits-pilani.ac.in
+
+
+BITS PILANI, DUBAI CAMPUS
+ACADEMIC – UNDERGRADUATE STUDIES DIVISION
+FIRST SEMESTER 2022 – 2023
+Course Handout (Part – II)
+Date:01.09.2022
+In addition to Part I (General Handout for all courses appended to the Time Table) this portion further
+gives specific details regarding the course.
+Course No.
+Course Title
+Instructor In-charge
+
+: GS F211
+(303)
+: Modern Political Concepts
+: Dr. Shamshad A. Khan
+
+Scope and Objective of the Course:
+The study of such a course gives precision and definiteness to the meaning of political terms and also helps to
+develop the spirit of citizenship. It seeks to develop clarity of thought and make the student understand intrinsic
+problems related with current politics and International relations. One is enabled to apply political theory in present
+day conditions and needs. It is well known that the working of Government can be improved by honest and sincere
+efforts of men. Hence the study of political concepts is very valuable.
+Course Pre/Co- requisite (if any)& Catalogue / Bulletin Description: Given in the Bulletin 2021 – 2022.
+Study Material:
+Text Book:
+Asirvatham, E., Political Theory, S. Chand, 13th ed., 1994.
+Reference Books :
+(a) Lipson, L, Great Issues of Politics, PHI, 1996.
+(b) Kapur, A.C., Principles of Political Science, S. Chand & Co., New Delhi.
+
+Course Plan:
+Lec.
+No.
+3
+4
+
+2
+4
+6
+4
+1
+1
+2
+
+Learning Objectives
+
+Topics to be covered
+
+To disseminate the whole range of
+knowledge regarding the state and its
+theory.
+To discuss the renaissance and the
+reformation of the modern period which
+have given birth to a series of evidence to
+the origin and definition of state, nation and
+nationality.
+To analyse the various role State plays in
+regulating the economic and the social
+development of a country.
+To know the origin and development of
+various types of rights and duties with
+reference to India.
+To know the various types of government
+and its political classification.
+To know the bases of a democratic
+society.
+To analyse the origin, development and
+evolution of Toleration
+To analyse the origin, development of
+Liberalism
+To know the origin, growth and decay of
+the fascist regime.
+
+Definition, nature and
+scope of Political Science
+
+Ref. to Text
+(Chapter)
+1
+
+Book
+
+Statedefinition, elements,
+distinction
+with
+Govt.
+Nation and associations
+
+4,5
+
+Functions of the State
+
+9,10
+
+Rights and Duties
+
+16,17,Class Notes
+
+Forms of Govt., meaning,
+merits and demerits
+Democracymeaning,
+merits and demerits.
+Toleration
+
+23,24, Class Notes
+25, 26
+
+Liberalism
+
+Class Notes
+
+Fascism
+
+33
+
+Reference (a) Ch. 7
+
+2
+
+To understand the bases of capitalism, its
+various dimensions and present forms.
+To study the socialistic pattern of
+development, its relevance in modern
+world, its merits and demerits.
+To connote the meaning of communism, its
+growth and present state, its applications.
+To elucidate the meaning of Maoism, its
+merits and demerits.
+To know about the radicalist movement, its
+uniqueness, successes and failures.
+To study the Gandhian principles, vision,
+and path of development.
+
+2
+3
+2
+1
+3
+
+Capitalism
+
+12
+
+Socialism
+
+9,13
+
+Communism
+
+30,31
+
+Maoism
+
+30
+
+Radicalism
+
+32,Class Notes
+
+Gandhism
+
+35, Class notes
+
+Evaluation Scheme:
+S. No.
+
+Component
+
+1.
+
+Mid-Sem
+
+2.
+
+Quiz
+
+3.
+
+Class Quizzes
+(total 5, best of 2
+would be counted for
+the evaluation)
+Assignment I (on-thespot essay on one
+topic out of reading
+materials given in
+advance)
+Comprehensive
+Exam
+
+4.
+
+5.
+
+Duration
+
+Marks
+
+Date & Time
+
+Nature of Component
+
+90
+minutes
+10
+minutes
+10
+
+30
+
+01.11.2022 FN
+
+Closed Book
+
+10
+
+07.10.22 F2
+
+Closed Book
+
+10
+
+Throughout the
+semester
+
+Closed Book
+
+50
+minutes
+
+10
+
+TBA in
+consultation
+with the
+students
+
+Open Book
+
+3 Hours
+
+40
+
+03.01.2023 FN
+
+Closed Book
+
+Mid-Sem Grading: Mid-sem grading will be displayed after two evaluation components. (Refer Academic
+calendar for schedule).
+Note: A student will be likely to get “NC”, if he / she doesn’t appear / appear for the sake of appearing for
+the evaluation components / scoring zero in pre-compre total.
+Makeup and Attendance policies: Make-ups are not available for any of the evaluation components.
+Attendance: Every student is expected to be responsible for regularity of his/her attendance in class
+rooms and laboratories, to appear in scheduled tests and examinations and fulfill all other tasks assigned
+to him/her in every course. A student should have a minimum of 60% of attendance in a course to be
+eligible to appear for the Comprehensive Examination in that course. For the students under the purview
+of Academic Counseling Board (ACB), the Board shall prescribe the minimum attendance requirement on
+a case-to-case basis. Attendance in the course will be a deciding factor in judging the seriousness of a
+student which may be directly/ indirectly related to grading.
+General timings for consultation: Chamber consultation is possible on every Wednesday from1300hrs
+Noon to 1400hrs in 148, Wing-A, 1st Floor, Exten: 220
+General instructions: Students should come prepared for classes and carry the prescribed text book(s)
+or material(s) as advised by the Course Faculty to the class.
+Notices: All notices concerning the course will be displayed on the notice boards of the HSS Department
+
+Contact details
+Dr. Shamshad Ahmad Khan, Assistant Professor, Chamber No: 148 Contact No: +9714 2753 700 Ext.
+220 email: shamshad@dubai.bits-pilani,ac.in
+
+Shamshad A. Khan, PhD
+Instructor In-charge
+
+BITS PILANI, DUBAI CAMPUS
+ACADEMIC - UNDERGRADUATE STUDIES DIVISION
+SECOND SEMESTER 2023 – 2024
+Course Handout (Part – II)
+Date: 05.02.2024
+In addition to Part I (General Handout for all courses appended to the Time Table) this portion further
+specific details regarding the course.
+Course No.
+Course Title
+Instructor-in-charge
+Course Instructors
+
+: CS F363 (2 1 3)
+: Compiler Construction
+: Dr. Elakkiya R
+: Dr. Elakkiya R, Dr. Angel Arul Jothi J
+
+Scope and Objective of the Course:
+This course aims at introducing the Lexical and Syntactic structure of a Language, the different
+phases of Compiler Design: Lexical Analysis, Syntax Analysis, Intermediate Code generation, Code
+Optimization, Code Generation; Error Handling, Table Management and involves practical on Lexical
+Analyzer, Parser, Symbol table, Semantic Analysis, Code Generation and Compiler Integration. At the
+end of the course, the students will be able to understand and apply the principles of compiler design
+in the development of system software tools & applications.
+Course Pre/Co-requisite (if any) & Catalogue/Bulletin Description: Given in the Catalogue 2023 –
+2024
+
+Text Book:
+TB. Aho, Lam, Sethi and Ullman, “Compilers-Principles, Techniques & Tools”, Pearson/AddisonWesley, Second Edition, 2013.
+Reference book(s):
+RB1. Andrew W Appel & Jens Palsberg, “Modern Compiler Implementation in JAVA”, Cambridge
+University Press, Revised Edition, 2002.
+RB2. Ravi Sethi, “Programming Languages: Concepts & Constructs”, Pearson International Edition,
+2003, ISBN:0-321-21074-3.
+Course Plan:
+S.No
+1
+
+2
+
+3
+
+Learning
+Objectives
+Phases of
+compilers
+
+Lexical Analysis
+
+Syntax analysis
+
+Topics to be covered
+Introduction to course. Structure and
+components of a compiler. Description of
+compiler phases
+The Role of lexical analyzer - Tokens,
+Patterns, Lexemes, Lexical Errors,
+Input Buffering - Look Ahead & Sentinels
+Specification of Tokens - Regular Expressions,
+Regular definitions
+Recognition of Tokens - Transition Diagrams
+The Lexical-Analyzer Generator Lex
+Introduction - Role of Parser, Syntax Errors
+and Recovery
+Context Free Grammars (CFG)- Parse Trees,
+Derivations, Ambiguity
+Writing a Grammar – Eliminating Left
+Recursion, Left Factoring
+Top-Down Parsing – Recursive Descent
+Parsing, First and Follow, LL (1) Grammars,
+Non-Recursive Predictive Parsing, Parsing
+table, Error Recovery
+Bottom Up parsing – Reductions, Handle
+
+Text/Reference
+Book chapters
+
+#
+lectures
+
+TB: Ch.1.1, 1.2
+
+1
+
+TB: Ch.3.1
+TB: Ch.3.2
+TB: Ch.3.3
+
+4
+
+TB: Ch.3.4
+TB: Ch.3.5
+TB: Ch. 4.1
+TB: Ch. 4.2
+TB: Ch. 4.3
+TB: Ch. 4.4
+TB: Ch. 4.5
+
+15
+
+4
+
+Symbol Table
+
+5
+
+Syntax Directed
+Translation
+
+6
+
+Intermediate
+Code
+Generation
+
+7
+
+Code
+Generation
+
+8
+
+Liveness
+Analysis & Data
+Flow equations
+
+9
+
+10
+
+11
+
+12
+
+Pruning, Shift Reduce Parsing, Conflicts
+Introduction to LR Parsing: Simple LR
+Powerful LR Parsers (if time permits)
+Parser Generators
+Data Structures for symbol table organization
+Inherited and Synthesized Attributes,
+evaluation order, dependency graph,
+evaluation of attributes, AST
+Variants of Syntax Trees
+Three-Address Code
+Declarations, Storage Layout for Local Names,
+Sequences of Declarations, Fields in Records
+and Classes
+Translation of Expressions
+Control Flow
+Issues in the Design of a Code Generator
+The Target Language
+Basic Blocks and Flow Graphs
+Optimization of Basic Blocks
+A Simple Code Generator
+
+TB: Ch. 4.6
+TB: Ch. 4.7
+TB: Ch. 4.9
+TB: Ch. 2.7
+
+2
+
+TB: Ch. 2.3, 5.1,
+5.2
+
+3
+
+TB Ch 6.1-6.6
+
+7
+
+TB: Ch 8.1-8.2,
+8.4-8.6,
+RB1: Ch 8.2
+
+5
+
+Uses, Defs, Liveness Analysis
+
+RB1: Ch 10.1
+
+2
+
+Register
+Allocation
+
+Register Allocation and Assignment
+
+TB: Ch 8.8,
+RB1: Ch 11.111.2
+
+2
+
+TB: Ch 8.7
+
+1
+
+Code
+Optimization
+
+Peephole Optimization - Redundant Code
+Elimination, Flow of Control Optimization,
+Eliminating Unreachable Code, Algebraic
+Simplification and Reduction in Strength, Use
+of Machine Idioms
+Machine-Independent Optimizations - Global
+Common Subexpressions, Copy Propagation,
+Dead-Code Elimination, Code Motion,
+induction variables and reduction in strength
+
+TB: Ch. 9.1
+
+1
+
+Garbage
+Collection
+Overview
+
+Techniques in GC and memory compaction
+
+Runtime
+Memory Models
+
+Stack Allocation
+
+Class Notes
+RB1: Ch 13.113.3
+
+1
+
+TB: Ch. 7.2-7.3
+
+1
+
+Total no of lectures planned
+
+45
+
+* The lectures may be slightly diverging from aforesaid plan based on students ‘background & interest in the
+topic, which may perhaps include special lectures and discussions that would be planned and schedule notified
+accordingly.
+
+List of Lab Experiments
+S.No.
+1
+2
+3
+4
+5
+
+Lab Exercise
+Lexical Analysis using LEX
+Syntax Analysis using YACC
+Semantic Analysis
+Symbol Table and Intermediate Code Generation
+Code Generation and Code Optimization
+
+Course Learning Outcomes:
+Upon successful completion of this course, the learner will be able to
+• CLO1 Understand the structure and components of a compiler and describe the various
+phases involved in the compilation process.
+• CLO2 Apply lexical analysis techniques, including recognizing tokens, specifying tokens using
+regular expressions, and utilizing the Lex lexical analyzer generator.
+• CLO3 Implement syntax analysis concepts, including context-free grammars, parsing
+techniques such as top-down and bottom-up parsing, and error recovery strategies.
+• CLO4 Utilize efficient data structures for symbol table organization to ensure seamless
+symbol lookup and management.
+• CLO5 Demonstrate competence in intermediate code generation, showcasing their ability to
+understand syntax tree variants, translate expressions into three-address code, and represent
+declarations, storage layout, and control flow in intermediate code structures.
+Evaluation Scheme:
+EC
+No.
+1
+
+Evaluation
+Components
+Midsem Exam
+
+Nature of
+Component
+Open book*
+
+90 minutes
+
+Weightage
+(%)
+30
+
+2
+
+Lab Midsem
+Exam
+
+Closed book
+
+2hrs
+
+20
+
+Closed book
+
+2hrs
+
+10
+
+TBA
+
+333 Lab
+
+Closed book
+
+3 hrs
+
+40
+
+29.05.24 AN
+
+TBA
+
+3
+4
+
+Lab
+Comprehensive
+Exam
+Comprehensive
+Exam
+
+Duration
+
+Date & Time
+
+Venue
+
+29.03.24 FN
+20.03.24(34),
+21.03.24(89),
+22.03.24(34)
+(3 batches)
+
+TBA
+333 Lab
+
+* Only prescribed text book(s) and hand-written notes are permitted
+Mapping of CLOs, PLOs, and CECs
+CLOs
+
+PLOs
+
+CLO1
+CLO2
+CLO3
+CLO4
+CLO5
+
+2, 4
+2, 3,4
+2,3,4
+5,6,8
+4,8
+
+EC1
+✓
+✓
+✓
+
+Evaluation Components (ECs)
+EC2
+EC3
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+
+EC4
+✓
+✓
+✓
+✓
+✓
+
+Mid-sem Grading:
+Mid-sem grading will be displayed after midsem test whenever about 30% of evaluation components
+are completed.
+Note: A student will be likely to get “NC”, if he / she doesn’t appear / appear for the sake of appearing
+for the evaluation components / scoring zero in pre-compre total / scoring zero in comprehensive
+examination.
+Makeup and Attendance policies:
+Make-ups are not given as a routine. It is solely dependent upon the genuineness of the
+circumstances under which a student fails to appear in a scheduled evaluation component. In such
+circumstances, prior permission should be obtained from the Instructor-in-Charge (I/C). Students with
+less than 60% of attendance will not be allowed to avail the make-ups. The decision of the I/C in the
+above matter will be final.
+Attendance:
+Every student is expected to be responsible for regularity of his/her attendance in class rooms and
+laboratories, to appear in scheduled tests and examinations and fulfill all other tasks assigned to
+him/her in every course. A student should have a minimum of 60% of attendance in a course to be
+eligible to appear for the Comprehensive Examination in that course. For the students under the
+purview of Academic Counseling Board (ACB), the Board shall prescribe the minimum attendance
+
+requirement on a case-to-case basis. Attendance in the course will be a deciding factor in judging the
+seriousness of a student which may be directly / indirectly related to grading.
+General timings for consultation:
+Students can contact the course instructors in his / her chamber for consultation as follows
+Dr. Elakkiya R: Tuesday 9th Hour
+Dr. Angel Arul Jothi J: Tuesday 9th Hour
+General instructions:
+Students should come prepared for classes and carry the text book(s) or material(s) as prescribed by
+the Course Faculty to the class.
+Notices:
+All Notices regarding this course will be placed on CS Department notice board and Google
+classroom. Students are also informed to check their BITS email (regularly) for any communication
+regarding the course.
+Contact Details:
+1. Dr. R. Elakkiya, Dept of CS,
+Room No.282 Contact No: +9714-4200700 Ext. no: 314 e-mail: elakkiya@dubai.bits-pilani.ac.in
+2. Dr. J. Angel Arul Jothi, Dept of CS,
+Room No: 231 Contact No: +9714-4200699 Ext. no: 158 e-mail: angeljothi@dubai.bits-pilani.ac.in
+
+Dr. R. Elakkiya
+Instructor-in-charge
+
+
+BITS PILANI, DUBAI CAMPUS
+ACADEMIC - UNDERGRADUATE STUDIES DIVISION
+FIRST SEMESTER 2023 – 2024
+Course Handout (Part – II)
+Date: 28.08.2023
+In addition to part-I (General Handout for all courses appended to the time table) this portion gives further
+specific details regarding the course.
+Course No.
+Course Title
+Instructor-in-charge
+Instructors
+
+: CS F351 (3 0 3)
+: Theory of Computation
+: Dr. Elakkiya R
+: Dr. Elakkiya R & Dr S. Jeyalatha
+
+Scope and Objective of the Course:
+Theory of Computation course covers basis concepts of formal models of computation and computability.
+It introduces a hierarchy of machines and languages to capture classes of computable sets. It concludes
+with a generic notion of computability, and classes of complexity of computable functions. To introduce the
+notions of automata, formal languages, computability and complexity classes.
+Note: Students should complete the prerequisite courses.
+Text Book(s) [T]
+• T1: Harry Lewis, Christios Papadimitriou, Elements of the Theory of Computation, Pearson
+Education, Second Edition, 2015
+Reference Book(s) [R]
+• R1: Dexter C Kozen, Automata and Computability, Springer, 2007.
+• R2: John Hopcroft, Rajeev Motwani, and Jeffery Ullman, Introduction to Automata Theory,
+Languages and Computation, Pearson Education, Second Edition, 2001.
+• R3: Michael Sipser, Introduction to Theory of Computation, Third Edition, Cengage, 2012.
+Bulletin Description: Given in the Bulletin 2023– 2024
+Course Pre-Requisites :
+CS F222-Discrete Structures in Computer Science
+CS F214-Logic in Computer Science
+Course Plan / Schedule:
+Lecture
+No
+
+Learning Objectives
+
+Topics to be covered
+
+1-6
+
+To Understand basis concepts
+and notation to be used.
+
+7-14
+
+To Understand Finite
+Automata as recognizers of
+languages and regular
+expressions as specifier of
+Languages.
+To Understand context free
+grammars as specifiers and
+push-down automata as
+recognizers of languages
+
+Introduction;
+Infinite sets, Proofs;
+Closures;
+Alphabets, Languages & Representation
+Deterministic Finite Automata,
+Non-Deterministic Finite Automata,
+Closure Properties & Equivalences,
+Regularity.
+
+15-26
+
+27-36
+
+To Understand Turing
+Machines as recognizers of
+
+Context-Free Grammars,
+Parse Trees & Ambiguity,
+Push – Down Automata,
+Equivalence of PDA and CFG,
+Properties of Context-Free Languages,
+Parsing, DCFG, Top-Down & Bottom-Up
+Parsing
+Turing Machines – Introduction,
+Turing Machines – Notation,
+
+Chapter in
+the
+TextBook
+1.1 – 1.8
+
+2.1 – 2.4
+R2: Chapter
+2, 3
+3.1 – 3.5, 3.7
+R2: Chp 5, 6.
+
+4.1 – 4.5
+
+languages and as theoretical
+models of general purpose
+computers.
+37-46
+
+47-56
+
+To Understand models of
+computable specification and
+equivalences and to
+understand the notion of
+decidability.
+
+To Understand the
+classification of computable
+problems based on notions of
+complexity of computation.
+
+Recursive and Recursively enumerable
+Languages,
+Extensions of Turing Machines,
+Random Access Turing Machines, NonDeterministic Turing Machines
+Grammars,
+Primitive recursive function,
+Church-Turing Machines,
+Universal Turing Machines,
+Halting Problem,
+Undecidable problem, Properties of
+recursive Languages
+The complexity Class P,
+Satisfiabilty,
+The Complexity Class NP,
+NP Completeness,
+Reducibility
+
+R2: Chp. 8
+
+4.6 – 4.7,
+5.1 – 5.3, 5.7
+R2: Chp. 9
+
+6.1 – 6.4
+7.1 – 7.2
+R2: Chp.10
+
+*The lectures may be slightly diverging from aforesaid plan based on students’ background & interest in the topic, which
+may perhaps include special lectures and discussions that would be planned and schedule notified according
+
+Course Learning Outcomes:
+Upon successful completion of this course, the learner will be able to
+• CLO1: Develop a foundational grasp of automata theory and formal languages, including their
+practical implications in computer science contexts.
+• CLO2: Apply closure properties to various language classes, explore equivalences between
+different formal models, and evaluate the consequences for language manipulation.
+• CLO3: Demonstrate skills in creating parse trees, resolving ambiguity in context-free grammars,
+and utilizing parsing techniques for effective language structure analysis.
+• CLO4: Analyze Turing machines as abstract computational tools, differentiating solvable problems
+and exploring the concept of undecidability, particularly in relation to the halting problem.
+• CLO5: Examine complexity classes P and NP, differentiate their attributes, comprehend
+polynomial-time reductions, and appreciate NP-completeness' significance in computational
+complexity theory.
+Evaluation scheme:
+EC
+No.
+1
+
+Evaluation
+Components
+Quiz 1
+
+Nature of
+Component
+Open Book
+
+Weightage
+%
+15
+
+2
+
+Midsem Test
+
+Closed Book
+
+30
+
+3
+
+Quiz 2
+
+Open Book
+
+15
+
+4
+
+Comprehensive
+Exam
+
+Closed book
+
+40
+
+Date – Time &
+Duration
+03.10.2023 – T1
+30 minutes
+30.10.23 – AN
+90 minutes
+28.11.2023 – T1
+30 minutes
+02.01.2024 – AN
+3 hours
+
+Venue
+
+To be
+announced
+later
+
+Mapping of CLOs, PLOs, and CECs
+CLOs
+
+PLOs
+
+CLO1
+CLO2
+CLO3
+CLO4
+CLO5
+
+1, 2, 6
+2, 6
+2, 3, 8
+2, 5,
+2, 4, 7
+
+EC1
+✓
+✓
+
+Evaluation Components (ECs)
+EC2
+EC3
+✓
+✓
+✓
+✓
+✓
+
+EC4
+✓
+✓
+✓
+✓
+✓
+
+Mid-sem Grading:
+Mid-sem grading will be displayed after two evaluation components or earlier when- ever about 40% of
+evaluation components are completed.
+Note: A student will be likely to get “NC”, if he / she doesn’t appear / appear for the sake of appearing
+for the evaluation components / scoring zero in pre-compre total.
+
+Makeup and Attendance policies:
+Make-ups are not given as a routine. It is solely dependent upon the genuineness of the circumstances
+under which a student fails to appear in a scheduled evaluation component. In such circumstances, prior
+permission should be obtained from the Instructor-in-Charge (I/C). Students with less than 50% of
+attendance will not be allowed to avail the make-ups. The decision of the I/C in the above matter will
+be final.
+Attendance: Every student is expected to be responsible for regularity of his/her attendance in class rooms
+and laboratories, to appear in scheduled tests and examinations and fulfill all other tasks assigned to
+him/her in every course. A student should have a minimum of 60% of attendance in a course to be eligible
+to appear for the Comprehensive Examination in that course. For the students under the purview of
+Academic Counseling Board (ACB), the Board shall prescribe the minimum attendance requirement on a
+case-to-case basis. Attendance in the course will be a deciding factor in judging the seriousness of a student
+which may be directly / indirectly related to grading.
+General timings for consultation:
+Chamber consultation hours:
+Dr. Elakkiya R: Monday 8th Hour
+Dr. Jeyalatha S: Wednesday 3rd Hour
+General instructions:
+Students should come prepared for classes and carry the text book(s) or material(s) as prescribed by the
+Course Instructor to the class.
+Notices:
+All notices concerning the course will be displayed on the CS department Notice Board and on LMS Moodle.
+Students are also informed to check their BITS email (regularly) for any communication regarding the
+course.
+
+Dr. Elakkiya R
+Instructor-in-Charge
+Contact Details:
+Dr. R. Elakkiya, Dept of CS, Room No.282
+Contact No: +9714-4200700 Ext. no: 314 e-mail: elakkiya@dubai.bits-pilani.ac.in
+Dr. S. Jeyalatha, Visiting Asst. Professor, Cabin 175
+Extn. 156 M: +971-560460467 e-mail: csadjunct@dubai.bits-pilani.ac.in
+
+BITS PILANI, DUBAI CAMPUS
+ACADEMIC – UNDERGRADUATE STUDIES DIVISION
+First Semester 2023 – 2024
+Course Handout (Part – II)
+Date: 28.08.2023
+In addition to Part I (General Handout for all courses appended to the Time Table) this portion further specific
+details regarding the course.
+Course No
+Course Title
+Course Instructors
+Instructor-in-charge
+
+: CS F301 (2 0 2)
+: Principles of Programming Languages
+: Dr B. Vijayakumar, Dr Pranav M Pawar
+: Dr B. Vijayakumar
+
+Scope and Objectives:
+The course covers feature of programming languages and introduces the main programming paradigms. It
+covers, in detail, the semantics of the features of programming languages –Control Abstraction, Data Types
+and Data Abstraction, Scope and Parameter passing and Concurrency related features. It covers various
+aspects of runtime environments like global and local data, code, function call stacks, dynamically allocated
+data, runtime features for exceptions and threads. Introduction to programming paradigms. Functional paradigm
+– formal elements of lambda calculus, introduction to syntax of common functional programming languages and
+programming exercises that explore the functional paradigm. Logic programming paradigm - formal elements
+of logic programming and programming tasks that explore the logic paradigm. Scripting as a paradigm. Domain
+specific languages.
+Course Pre/Co- requisite (if any) & Catalogue / Bulletin Description: Given in the Bulletin 2020 – 2021 –
+Data Structures and Algorithms.
+Text Books [TB]:
+i. Ravi Sethi, "Programming Languages: Concepts and Constructs" 2nd Edition by Addison
+Wesley, 2006 (Reprint 2010).
+Reference Books [RB]:
+i. David A Watt, William Findlay, “Programming Language Design Concepts”, John Wiley & Sons, Ltd.,
+2004.
+ii. Aho, Lam, Sethi and Ullman, "Compilers Principles, Techniques, and Tools". Pearson Education
+Edition. 2004.
+iii. Ellis Horowitz, “Fundamentals of Programming Languages”, Galgotia Pub. Ltd., 2004.
+iv. Robert W. Sebesta, "Concepts of Programming Languages", 9th Edition by The Benjamin/Cummings
+Publishing Company, Inc., 2009.
+v. Programming Languages, Principles and Practice 3rd Edition, by Kenneth C. Louden & Kenneth A.
+Lambert, Cengage Learning 2012. (online)
+vi. Introduction to Programming Languages, 1st Edition, Arvind Kumar Bansal, Chapman and Hall/CRC,
+Published December 14, 2013. (online)
+vii. Michael L.Scott, Programming Language Pragmatics 3rd edition.
+viii. Paul Barry. 2016. Head First Python, 2nd. ed.
+Research topics:
+1. Research issues in programming languages
+2. Programming Languages for High Performance Computing
+Course Plan / Schedule Sec 1: Tue 3, Wed 2
+S. No.
+Topic
+1
+
+Introduction and
+Motivation
+
+Sec 2: Tue 3, Wed 2
+Learning Objectives
+
+Sec 3: Mon 2, Tue 5
+No of
+Reading
+Lectures
+Historic background, Criteria for a good programming
+1
+language design
+T (i): Ch 1,
+R (iii): Ch.
+1
+
+S. No.
+2
+
+3
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+11
+
+12
+
+13
+
+14
+
+Topic
+
+Learning Objectives
+
+No of
+Reading
+Lectures
+Language Paradigms Imperative, Declarative, Features of a Programming
+1
+T (i): Ch 1,
+Language, compilers
+Class
+Notes
+Language Description Syntactic Structure
+2
+T(i): Ch.2
+Statements:
+Control Abstraction, Loops, Jumps
+1
+T(i): Ch 3
+Structured
+Programming
+Types, Data Layout Data Representation, Primitive and Structured Data
+3
+T(i): Ch 4
+Models
+Types, ADTs, Type checking vs. Type Inferencing,
+Type Equivalence and Subtyping, Data Layout
+Models
+Basic Runtime
+Code vs. Data, Global vs. Local Data, Functions
+3
+Class
+Environments and
+and Call Stacks, dynamically allocated data and
+Notes,
+Procedure Activations heaps; Introduction to procedures, Recursion,
+R (ii): Ch 7
+Parameter Passing Methods, Call-by-Value, Call-byT(i): Ch 5
+Reference. Scope rules for names, static and
+dynamic scope rules, nested scope, Activation
+Records, Lexical Scope, Dangling Pointers, Tail
+Recursion
+Object Oriented
+Object Oriented Programming Paradigm, and
+3
+T(i): Ch 7
+Abstraction
+features, Class hierarchy, Inheritance, Information
+hiding, Single and Multiple Inheritance,
+Polymorphism
+Scripting as a
+Problem domains, Scripting in WWW, Python:
+3
+Class
+paradigm, emerging Basics, data types, loops, list, tuple, dictionary,
+notes,
+trends
+functions. Classes, Objects, Inheritance.
+R(viii)
+Functional
+Functional Programming with Lists (using PICO
+2
+T(i): Ch 8
+Programming
+LISP): Characteristics, atoms, lists, procedures,
+T(i): Ch
+primitive functions, expressions, List Operations,
+9,10
+Box and Arrow Notation, record structure, procedure
+abstraction, de, setq, cond, recurrence relations in
+PICO LISP, read, while, if, prinl
+Logic Programming Logic Programming, The Structure of Prolog
+2
+T(i): Ch 11
+programs,
+Types/Terms,
+Type
+Predicates,
+Expressions, Unification, Functions, Recurrence
+Relation in Prolog, Rules, Boolean Predicates,
+Logical Operators, Functions-Computing with
+Relations, Database implementation in Prolog.
+Concurrent
+Threads, IPCS overview, Shared Memory, Critical
+3
+T(i): Ch 12
+Programming
+Section problem, Synchronization Features
+R (iv)
+(semaphores, monitors, locks), Dining Philosophers
+Problem and its solution using monitors, Shared
+Memory programming
+Complex Run Time Exception handling and non-local jumps, Threads
+2
+Class
+Environments
+Notes
+Ch 12:R
+(iv)
+Advanced Topics
+Advancements in Programming Paradigm, Domain
+2
+Class
+specific programming, research topics, Open MPI
+notes
+parallel programming library
+Total No of Classes Planned
+28
+
+Course Learning Outcomes (CLOs)
+Upon successful completion of this course, students should be able to:
+• CLO1 To understand the basic theory of programming languages, language features and paradigms of
+different programming languages.
+• CLO2 To be able to describe syntax, semantics, names, scopes, bindings, control flow, data types and
+execution of programming languages.
+• CLO3 To understand the concepts of OO languages, functional languages, logical and scripting
+languages.
+• CLO4 To determine appropriate programming languages for given applications and apply it effectively.
+• CLO5 To introduce the concepts of concurrent programming, complex runtime environment and
+advanced topics.
+Evaluation Scheme:
+EC
+No
+
+Components
+
+Duration
+
+Weightage
+%
+
+1
+
+Quiz 1 (Closed Book)
+
+20 minutes
+
+10%
+
+90 minutes
+
+30%
+
+-
+
+20%
+
+26.11.23
+
+3 hours
+
+40%
+
+04.01.24
+AN
+
+2
+3
+4
+
+Midsem Exam
+(Open Book)
+Mini Project
+(Open Book)
+Comprehensive Exam
+(Closed Book)
+
+Date &
+Time
+05.10.23
+Th 2
+31.10.23
+AN
+
+Venue
+
+TBA
+
+Mini Project: Mini project may be chosen by students on either some or all of the above-mentioned topics.
+Case studies, interpretation of data and then analysis, will form a part of all evaluation components. Mini-Project
+evaluation includes coding, seminar, presentation and viva. The assignments will involve use of
+C/C++/LISP/PROLOG/Python, research topics, Open Source Tools, and so on. Details will be intimated through
+a separate notification or announced in the class.
+Tutorials: Tutorial sheets will be distributed in classes. This will help you to enhance your abilities in problem
+solving. Assistance will be given in solving them during the classes. No make-up will be provided for tutorials.
+Mapping of CLOs, PLOs, and CECs
+CLOs
+
+PLOs
+
+CLO1
+CLO2
+CLO3
+CLO4
+CLO5
+
+1,2
+2,3,4
+2,3,4,5,6
+5,6,8
+1,2,3
+
+EC1
+✓
+✓
+
+Evaluation Components (ECs)
+EC2
+EC3
+EC4
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+
+* Please refer the link for the PLOs of the B.E. Computer Science programme
+
+Mid-sem Grading:
+Mid-sem grading will be displayed after two evaluation components or earlier when-ever about 40% of
+evaluation components are completed.
+Note: A student will be likely to get “NC”, if he / she doesn’t appear / appear for the sake of appearing for
+the evaluation components / scoring zero in pre-compre total.
+Makeup and Attendance policies:
+Make-ups: are not given as a routine. It is solely dependent upon the genuineness of the circumstances under
+
+which a student fails to appear in a scheduled evaluation component. In such circumstances, prior permission
+should be obtained from the Instructor-in-Charge (I/C). Students with less than 60% of attendance will not be
+allowed to avail the make-ups. The decision of the I/C in the above matter will be final.
+Attendance: Every student is expected to be responsible for regularity of his/her attendance in class rooms
+and laboratories, to appear in scheduled tests and examinations and fulfill all other tasks assigned to him/her in
+every course. A student should have a minimum of 60% of attendance in a course to be eligible to appear for
+the Comprehensive Examination in that course. For the students under the purview of Academic Counseling
+Board (ACB), the Board shall prescribe the minimum attendance requirement on a case-to-case basis.
+Attendance in the course will be a deciding factor in judging the seriousness of a student which may be directly
+/ indirectly related to grading.
+General timings for consultation:
+Students can contact the course instructors in his/her chamber
+273 (BVK), Tue 8 and 9th hour 1.55pm to 3.40pm.
+238 (PMP), Tue 9th hour 2.50pm-03.40 pm.
+General instructions:
+Students should come prepared for classes and carry the text book(s) or material(s) as prescribed by the Course
+Faculty to the class.
+Notices:
+All Notices regarding this course will be placed on Computer Science Department noticeboard.
+
+Instructor-in-charge
+CS F301
+Instr Instructor’s Contact Details:
+• Dr. B. Vijayakumar, Professor, CS, WING B, Room No. 236
+Contact No: +9714-4200699 Ext. no: 342 e-mail: vijay@dubai.bits-pilani.ac.in
+• Dr Pranav M Pawar, Asst. Professor, CS, WING B, Room No. 238
+Contact No: +9714-4200699 Ext. no: 304 e-mail: pranav@dubai.bits-pilani.ac.in
+
+
+BITS PILANI, DUBAI CAMPUS
+ACADEMIC – UNDERGRADUATE STUDIES DIVISION
+SECOND SEMESTER 2023 - 2024
+Course Handout (Part II)
+Date: 05.02.2024
+In addition to part-I (General Handout for all courses appended to the timetable) this portion gives
+further specific details regarding the course.
+Course No
+Course Title
+Instructor-in-charge
+Instructors
+
+:
+:
+:
+:
+
+CS F303 (314)
+Computer Networks
+Dr. Pranav M Pawar
+Dr. Raja Muthalagu, Dr. Tamizharsan PS,
+Dr. Pranav M Pawar
+
+Scope and objective of the course:
+The course aims at providing a sound conceptual foundation in the area of Computer Networks with
+emphasis on the design aspects. The course attempts to provide a balanced treatment of the stateof-the-art in the area and thus prepares the students for taking more rigorous and specialized courses
+in this and related fields. At the end of this course, students should be able to analyze, design,
+troubleshoot and maintain commonly used network types apart from being able to begin Networkoriented Software development.
+Course Pre/Co- requisite (if any) & Catalogue / Bulletin Description: Given in the Bulletin
+2023 – 24
+Study Material:
+Text book:
+[T1]. Larry L. Peterson & Bruce S. Davie: Computer Networks: A Systems Approach, Fifth
+Edition, Morgan Kaufmann / Elsevier, New Delhi, 2011
+[T2] James F. Kurose & Keith W. Ross “Computer Networking: A Top-Down Approach Featuring
+the Internet”,Sixth Edition,Pearson,2017.
+Reference Book:
+[R1]. Forouzan B A: Data Communications and Networking, McGraw Hill, 4th Edition, 2006.
+Course plan:
+Sl.No
+.
+1.
+
+2.
+
+3.
+
+TOPIC
+
+CHAPTER Ref
+
+Introduction: Uses of Computer Networks, Network Class notes
+Hardware: The Network Edge, The Network Core,
+Access Networks.
+Physical Media: The theoretical basis for data T1 (1), T2(1)
+communication (Fourier Analysis, Bandwidth Limited
+Signals, Maximum Data Rate of a Channel)
+ISPs and Internet Backbones, Delay and Loss in Packet T1 (1), T2(1)
+Switched Networks, Network Software: Protocol
+Hierarchies, and their Service Models.
+
+Lects.
+2
+
+2
+
+3
+
+4.
+5.
+
+6.
+7.
+
+8.
+9.
+
+10.
+
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+18.
+
+19.
+20.
+21.
+
+Reference Models (OSI, TCP/IP)
+Data Link Layer: Services, Error Detection and
+Correction Techniques (Parity Checks, Checksums,
+CRC).
+Multiple Access Protocol: TDM, ALOHA, Slotted
+ALOHA, CSMA in Local Area Networks.
+Link Layer Addressing: MAC Addresses, ARP,
+DHCP; Ethernet: Frame Structure, CSMA/CD.
+Multiprotocol Label Switching (MPLS).
+Interconnections: Hubs, and Switches.
+Wireless Networks: Wireless Links and Network
+Characteristics, Wi-Fi: 802.11 Wireless LAN
+Architecture and Protocol,
+Network Layer: Virtual Circuits and Datagram
+Networks, What is Inside a Router? Forwarding and
+Addressing in the Internet.
+Routing Algorithms: Shortest Path, Flooding, Link
+State Vector
+Routing in the Internet: RIP, OSPF, Border Gateway
+Protocol
+Mobile Networks: Mobility management, Mobile IP.
+Transport Layer: Multiplexing, Demultiplexing, UDP,
+Principles of Reliable Data Transfer
+TCP: Segment structure, RTT Estimation and Timeout,
+TCP Flow Control.
+TCP Error Control, and Congestion Control.
+Socket Programming with TCP and with UDP.
+Application Layer: Hypertext Transfer Protocol, HTTP
+Message
+Format,
+Cookies,
+Conditional
+GET,FTP,peer-peer applications
+Simple Mail Transfer Protocol, Domain Name Systems
+(DNS).
+Network Security: Overview of network Cryptography
+ML for Networking
+
+Class notes
+T2 (5), T1(2)
+
+2
+3
+
+Class notes
+
+3
+
+T2 (5), T1(2)
+
+4
+
+Class notes
+T2(6)
+
+2
+2
+
+Class notes
+
+2
+
+T2(4)
+
+3
+
+T2(4)
+
+3
+
+T2 (6)
+Class notes
+
+1
+2
+
+T2 (3)
+
+2
+
+T2(3)
+T2 (2)
+T2 (2)
+
+2
+2
+2
+
+T2 (2)
+
+2
+
+Class notes
+Class Notes
+
+1
+1
+
+Class notes also have to be referred for all the above topics
+Total number of classes planned=45
+* The lectures may slightly diverge from aforesaid plan based on students ‘background & interest
+in the topic, which may perhaps include special lectures and discussions that would be planned and
+schedule notified accordingly.
+Tutorial classes will be of problem-solving nature and may also contain coding/implementation
+aspects on the theory covered in the classes. You may discuss the meaning or intent of a problem
+given in the lab/tut with instructors. Tut/ Lab record is to be maintained by everyone and is required
+at the end to be submitted to I/C.
+Lab Practical: The following topics are covered in the lab.
+Sl#
+1
+
+Topics
+Introduction to different networking commands.
+
+Sessions
+(2 classes per
+week)
+1
+
+Venue
+
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+
+Introducing basic router commands & Simulating a
+router configuration (Static) using CISCO Packet
+Tracer
+Simulation of Dynamic routing using CISCO Packet
+Tracer
+Simulation of Subnetting using CISCO Packet Tracer
+Capture HTTP packet using Wireshark and analyses
+layer wise header.
+Using Wireshark explore the ARP and ICMP protocols.
+Develop a multithreaded TCP server and verify the same
+using a telnet client and TCP client.
+Develop a UDP server using java and verify using the
+UDP client
+Simulation of wired network topology using Network
+Simulator-2
+Simulation of LAN using Network Simulator-2
+Simulation of Wireless Network using Network
+Simulator-2
+Introduction to NetSim and simulating Wired & Wireless
+networks
+
+1
+
+Room No.
+335
+
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+
+Course Learning Outcomes (CLOs)
+Upon successful completion of this course, students should be able to:
+• CLO1 Understand the fundamental concepts of networking, layer network model,
+standards, protocols and technologies.
+• CLO2 Describe, analyze and evaluate a different datalink, network, and transport layer
+protocols.
+• CLO3 Identify the different computer network components and design the computer
+network as per the requirements.
+• CLO4 Understand the working principals of different application layer protocols.
+• CLO5 Illustrate applications of Computer Network capabilities, selection and usage for
+various sectors of user community.
+Evaluation Scheme (OB - Open Book, CB - Closed Book, TBA – To Be Announced):
+S.No.
+Component
+OB/CB Duration
+Weightage
+Date &Time
+1.
+Mid Sem Test
+OB*
+90 Minutes
+30%
+01.04.24 AN
+2.
+Mid Semester Lab Exam
+CB
+90 Minutes
+10%
+TBA
+3
+Quiz (online)
+CB
+20 Minutes
+10%
+08.05.24 (W6)
+4.
+End semester Lab Exam
+CB
+90 Minutes
+15%
+TBA
+5.
+Comprehensive Exam
+CB
+3 hours
+35%
+31.05.24 AN
+* Only prescribed text book(s), Reference book and hand-written notes are permitted
+Mapping of CLOs, PLOs, and ECs (PLO-Program Learning Outcomes, Evaluation
+Components):
+CLOs
+
+PLOs
+
+CLO1
+CLO2
+
+1,2
+2,3
+
+EC1
+√
+√
+
+Evaluation Components (ECs)
+EC2
+EC3
+EC4
+√
+√
+√
+√
+
+EC5
+√
+√
+
+CLO3
+CLO4
+CLO5
+
+√
+
+2,3,4,5
+2,3
+3,4,5,6,7,8
+
+√
+√
+√
+
+√
+√
+
+Mid-sem Grading:
+Mid-sem grading will be displayed after three evaluation components or earlier whenever about 40
+% of evaluation components are completed.
+Note: A student will be likely to get “NC”, if he / she
+● Doesn’t appear / appear for the sake of appearing for the evaluation components / scoring
+zero in pre-compre total.
+● Scoring zero in the lab component / Abstaining from lab classes throughout.
+Makeup and Attendance policies:
+Make-ups are not given as a routine. It is solely dependent upon the genuineness of the
+circumstances under which a student fails to appear in a scheduled evaluation component. In such
+circumstances, prior permission should be obtained from the Instructor-in-Charge (I/C).The
+decision of the I/C in the above matter will be final.
+Attendance: Every student is expected to be responsible for regularity of his/her attendance in class
+rooms and laboratories, to appear in scheduled tests and examinations and fulfill all other tasks
+assigned to him/her in every course. A student should have a minimum of 60% of attendance in a
+course to be eligible to appear for the Comprehensive Examination in that course. For the students
+under the purview of Academic Counseling Board (ACB), the Board shall prescribe the minimum
+attendance requirement on a case-to-case basis. Attendance in the course will be a deciding factor
+in judging the seriousness of a student which may be directly / indirectly related to grading.
+General instructions:
+Students should come prepared for classes and carry the text book(s) or material(s) as prescribed
+by the Course Faculty to the class.
+Notices: All notices concerning the course will be displayed on the respective Notice Boards and
+Google class room. Optionally, if there is a need, email to your BITS mail would be used on short
+notice and therefore you should activate your BITS mail. All official communications will be sent
+to your BITS email only.
+Course instructors contact information:
+Instructor Name
+Dr. Raja Muthalagu
+Dr. Tamizharasan PS
+Dr. Pranav M Pawar
+
+Email Id
+raja.m@dubai.bitspilani.ac.in
+tamizharasan@dubai.bitspilani.ac.in
+pranav@dubai.bitspilani.ac.in
+
+Chamber
+consultation hour
+Thursday 9th hour
+Thursday 9th hour
+Thursday 7th hour
+
+Chamber# &
+contact Tel#
+233 ,042753700
+Ext. – 325
+333, 042753700
+Ext. – 442
+238, 042753700
+Ext. – 304
+
+(Dr. Pranav M Pawar)
+Instructor In-Charge
+CS F303 (Computer Networks)
+
+
