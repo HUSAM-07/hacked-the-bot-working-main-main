@@ -24,7 +24,7 @@ app = FastAPI()
 # CORS configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://subtle-kataifi-c6d4a1.netlify.app"],
+    allow_origins=["https://subtle-kataifi-c6d4a1.netlify.app", "http://localhost:3000"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -38,14 +38,22 @@ except Exception as e:
     raise
 
 # Change this part in api/index.py
-CONTEXT_FILE = "context.txt"
+CONTEXT_FILE = os.path.join(os.path.dirname(__file__), "context.txt")
 
 def load_context():
     try:
-        with open(CONTEXT_FILE, 'r', encoding='utf-8') as file:
-            return file.read()
-    except FileNotFoundError:
-        logger.error(f"Context file not found: {CONTEXT_FILE}")
+        # First try the direct path
+        if os.path.exists(CONTEXT_FILE):
+            with open(CONTEXT_FILE, 'r', encoding='utf-8') as file:
+                return file.read()
+        
+        # If not found, try the root directory
+        root_context = os.path.join(os.getcwd(), "context.txt")
+        if os.path.exists(root_context):
+            with open(root_context, 'r', encoding='utf-8') as file:
+                return file.read()
+                
+        logger.error("Context file not found in any location")
         return None
     except Exception as e:
         logger.error(f"Error reading context file: {str(e)}")

@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         userInput.value = '';
         userInput.disabled = true;
         sendButton.disabled = true;
+        typingIndicator.classList.remove('hidden');
 
         try {
             const response = await fetch(`${API_URL}/chat`, {
@@ -47,13 +48,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 throw new Error(data.detail || 'Failed to get response');
             }
 
+            if (!data.answer) {
+                throw new Error('No answer received from the server');
+            }
+
             addMessage(data.answer, 'bot');
         } catch (error) {
             console.error('Error:', error);
-            addMessage(`Error: ${error.message}. Please try again.`, 'bot');
+            let errorMessage = 'An error occurred. ';
+            
+            if (error.message.includes('content not loaded')) {
+                errorMessage += 'Please make sure to process the documents first.';
+            } else if (error.message.includes('OPENAI_API_KEY')) {
+                errorMessage += 'There is an issue with the AI service configuration.';
+            } else {
+                errorMessage += 'Please try again later.';
+            }
+            
+            addMessage(errorMessage, 'error');
         } finally {
             userInput.disabled = false;
             sendButton.disabled = false;
+            typingIndicator.classList.add('hidden');
             userInput.focus();
         }
     }

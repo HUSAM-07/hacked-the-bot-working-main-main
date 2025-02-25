@@ -11,5 +11,9 @@
             "src": "/(.*)",
             "dest": "api/index.py"
         }
+    ],
+    "files": [
+        "context.txt",
+        "api/context.txt"
     ]
 } 
