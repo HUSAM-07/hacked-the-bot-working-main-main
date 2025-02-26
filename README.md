@@ -1,7 +1,8 @@
 # Course Handout Assistant - BITS Pilani Dubai
 
 An AI-powered chatbot that helps students find information from their course handouts quickly and efficiently.
-| made by Neha, Rohil, Faaizah and Husam as part of the MTCxACMW HacktheBot Hackathon 2025
+
+**Developed by Neha, Rohil, Faaizah and Husam as part of the MTCxACMW HacktheBot Hackathon 2025**
 
 ## Currently Available Handouts
 - CS F415 - Data Mining (First Semester 2023-2024)
