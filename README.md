@@ -4,6 +4,9 @@ An AI-powered chatbot that helps students find information from their course han
 
 **Developed by Neha, Rohil, Faaizah and Husam as part of the MTCxACMW HacktheBot Hackathon 2025**
 
+![Course Handouts AI Architecture](hacktbot.png)
+
+
 ## Currently Available Handouts
 - CS F415 - Data Mining (First Semester 2023-2024)
 
